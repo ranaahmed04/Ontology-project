@@ -1,0 +1,1045 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/"
+     xml:base="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actorof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actorof">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasActor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:58:28Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Directorof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Directorof">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasDirector"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:58:28Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writerof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writerof">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasWriter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:58:28Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasActor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T16:52:12Z</dc:date>
+        <rdfs:label xml:lang="en">hasActor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasDirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T16:52:12Z</dc:date>
+        <rdfs:label xml:lang="en">hasDirector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasWriter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasWriter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T16:52:12Z</dc:date>
+        <rdfs:label xml:lang="en">hasWriter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">Age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:25:09Z</dc:date>
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/language">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T17:03:36Z</dc:date>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T17:03:36Z</dc:date>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T17:03:36Z</dc:date>
+        <rdfs:label xml:lang="en">Nationality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T17:03:36Z</dc:date>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-02T17:03:36Z</dc:date>
+        <rdfs:label xml:lang="en">Year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">78.29943381160433</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.1178025073266</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">272.9605745439994</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">228.29604436122924</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:label xml:lang="en">Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">204.57660092916038</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">21.552130721375526</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actorof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Directorof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writerof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">84.69393560199993</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.2559898405937</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:label xml:lang="en">Movie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasWriter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.3723498782683</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">285.18311038003856</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.58741868796063</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.44275350160838</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:label xml:lang="en">Writer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AlPacino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AlPacino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie6"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</age>
+        <gender>Male</gender>
+        <name>Al Pacino</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:04:27Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AnthonyHopkins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AnthonyHopkins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie5"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</age>
+        <gender>Male</gender>
+        <name>Anthony Hopkins</name>
+        <nationality>British</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:11:20Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BongJoonHo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BongJoonHo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie9"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie9"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie9"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</age>
+        <gender>Male</gender>
+        <name>Bong Joon-ho</name>
+        <nationality>South Korean</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:32:44Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BradPitt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BradPitt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie7"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</age>
+        <gender>Male</gender>
+        <name>Brad Pitt</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:00:18Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristianBale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristianBale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie3"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</age>
+        <gender>Male</gender>
+        <name>Christian Bale</name>
+        <nationality>British</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:38:33Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristopherNolan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristopherNolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie3"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie3"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</age>
+        <gender>Male</gender>
+        <name>Christopher Nolan</name>
+        <nationality>British</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:35:48Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChuckPalahniuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChuckPalahniuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie4"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</age>
+        <gender>Male</gender>
+        <name>Chuck Palahniuk</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:34:07Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/DavidFincher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/DavidFincher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie4"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie4"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</age>
+        <gender>Male</gender>
+        <name>David Fincher</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:31:44Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/GuyRitchie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/GuyRitchie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie7"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie7"/>
+        <gender>Male</gender>
+        <name>Guy Ritchie</name>
+        <nationality>British</nationality>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:48:56Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/HarveyKeitel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/HarveyKeitel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</age>
+        <gender>Male</gender>
+        <name>Harvey Keitel</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:45:23Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JohnTravolta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JohnTravolta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</age>
+        <gender>Male</gender>
+        <name>John Travolta</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:25:53Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JonathanDemme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JonathanDemme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie5"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie5"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</age>
+        <gender>Male</gender>
+        <name>Jonathan Demme</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:08:56Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/MichaelMann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/MichaelMann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie6"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie6"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</age>
+        <gender>Male</gender>
+        <name>Michael Mann</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:02:24Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/UmaThurman"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Pulp Fiction</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:40:43Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/RobertoBenigni"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/RobertoBenigni"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/NicolaPiovani"/>
+        <country>Italy</country>
+        <language>Italian</language>
+        <title>Life Is Beautiful</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:08:06Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Kill Bill (volume 1)</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:52:00Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristianBale"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristopherNolan"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristopherNolan"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>The Dark Knight</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:52:10Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/DavidFincher"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/DavidFincher"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChuckPalahniuk"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>FightClub</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T11:52:16Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AnthonyHopkins"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JonathanDemme"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JonathanDemme"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>The Silence Of The Lambs</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:43:57Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AlPacino"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/MichaelMann"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/MichaelMann"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Heat</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:44:04Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BradPitt"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/GuyRitchie"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/GuyRitchie"/>
+        <country>UK</country>
+        <language>English</language>
+        <title>Snatch</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:45:25Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/HarveyKeitel"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino"/>
+        <country>USA</country>
+        <language>English</language>
+        <title>Reservoir Dogs</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:45:33Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BongJoonHo"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BongJoonHo"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BongJoonHo"/>
+        <language>Korean</language>
+        <nationality>South Korea</nationality>
+        <title>Parasite</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</year>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:07:45Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/NicolaPiovani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/NicolaPiovani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie10"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</age>
+        <gender>Male</gender>
+        <name>Nicola Piovani</name>
+        <nationality>Italian</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T14:16:10Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</age>
+        <gender>Male</gender>
+        <name>Quentin Tarantino</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:18:54Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/RobertoBenigni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/RobertoBenigni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie10"/>
+        <Directorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie10"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</age>
+        <gender>Male</gender>
+        <nationality>Italian</nationality>
+        <title>Roberto Benigni</title>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:29:11Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/UmaThurman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/UmaThurman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer"/>
+        <Actorof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1"/>
+        <Writerof rdf:resource="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</age>
+        <gender>Female</gender>
+        <name>Uma Thurman</name>
+        <nationality>American</nationality>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T13:23:23Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">77.98632681730729</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.9558673873461</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:38:01Z</dc:date>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">111.93120624160925</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">104.43991400016249</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:37:47Z</dc:date>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">73.15048190362742</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">203.76225811001524</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:37:51Z</dc:date>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.47070054709525</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">122.354733591743</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:38:05Z</dc:date>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">142.1014707378477</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">296.8019640671547</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:creator>rana ahmed</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-03T12:34:18Z</dc:date>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>Movie project</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

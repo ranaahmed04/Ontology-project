@@ -1,0 +1,768 @@
+@prefix : <http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/> .
+
+<http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPosition
+<http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
+<http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
+<http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actorof
+:Actorof rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         owl:inverseOf :hasActor ;
+         rdfs:domain :Actor ;
+         rdfs:range :Movie ;
+         <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+         <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:58:28Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Directorof
+:Directorof rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf :hasDirector ;
+            rdfs:domain :Director ;
+            rdfs:range :Movie ;
+            <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+            <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:58:28Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writerof
+:Writerof rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          owl:inverseOf :hasWriter ;
+          rdfs:domain :Writer ;
+          rdfs:range :Movie ;
+          <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+          <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:58:28Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasActor
+:hasActor rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Movie ;
+          rdfs:range :Actor ;
+          <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+          <http://purl.org/dc/elements/1.1/date> "2024-05-02T16:52:12Z"^^xsd:dateTime ;
+          rdfs:label "hasActor"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasDirector
+:hasDirector rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Movie ;
+             rdfs:range :Director ;
+             <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+             <http://purl.org/dc/elements/1.1/date> "2024-05-02T16:52:12Z"^^xsd:dateTime ;
+             rdfs:label "hasDirector"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasGenre
+:hasGenre rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Movie ;
+          rdfs:range :Genre .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/hasWriter
+:hasWriter rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Movie ;
+           rdfs:range :Writer ;
+           <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+           <http://purl.org/dc/elements/1.1/date> "2024-05-02T16:52:12Z"^^xsd:dateTime ;
+           rdfs:label "hasWriter"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/age
+:age rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdfs:domain :Person ;
+     rdfs:range xsd:integer ;
+     rdfs:label "Age"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Movie ;
+         rdfs:range xsd:string ;
+         rdfs:label "Country"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Person ;
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:25:09Z"^^xsd:dateTime ;
+        rdfs:label "Gender"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/language
+:language rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Movie ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+          <http://purl.org/dc/elements/1.1/date> "2024-05-02T17:03:36Z"^^xsd:dateTime ;
+          rdfs:label "Language"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Person ;
+      rdfs:range xsd:string ;
+      <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+      <http://purl.org/dc/elements/1.1/date> "2024-05-02T17:03:36Z"^^xsd:dateTime ;
+      rdfs:label "Name"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/nationality
+:nationality rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string ;
+             <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+             <http://purl.org/dc/elements/1.1/date> "2024-05-02T17:03:36Z"^^xsd:dateTime ;
+             rdfs:label "Nationality"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Movie ;
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+       <http://purl.org/dc/elements/1.1/date> "2024-05-02T17:03:36Z"^^xsd:dateTime ;
+       rdfs:label "Title"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Movie ;
+      rdfs:range xsd:integer ;
+      <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+      <http://purl.org/dc/elements/1.1/date> "2024-05-02T17:03:36Z"^^xsd:dateTime ;
+      rdfs:label "Year"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "78.29943381160433"^^xsd:double ;
+                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "180.1178025073266"^^xsd:double ;
+                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                  ] ;
+       rdfs:label "Actor"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy
+:Comedy rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime
+:Crime rdf:type owl:Class ;
+       rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "272.9605745439994"^^xsd:double ;
+                                                                       <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "228.29604436122924"^^xsd:double ;
+                                                                       rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                     ] ;
+          rdfs:label "Director"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama
+:Drama rdf:type owl:Class ;
+       rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Genre
+:Genre rdf:type owl:Class ;
+       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "204.57660092916038"^^xsd:double ;
+                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "21.552130721375526"^^xsd:double ;
+                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                  ] .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie
+:Movie rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :Actorof ;
+                             owl:someValuesFrom :Movie
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Directorof ;
+                             owl:someValuesFrom :Movie
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Writerof ;
+                             owl:someValuesFrom :Movie
+                           ] ;
+       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "84.69393560199993"^^xsd:double ;
+                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "141.2559898405937"^^xsd:double ;
+                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                  ] ;
+       rdfs:label "Movie"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Person
+:Person rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasActor ;
+                              owl:someValuesFrom :Movie
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasDirector ;
+                              owl:someValuesFrom :Movie
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasWriter ;
+                              owl:someValuesFrom :Movie
+                            ] ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "169.3723498782683"^^xsd:double ;
+                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "285.18311038003856"^^xsd:double ;
+                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                   ] ;
+        rdfs:label "Person"@en .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller
+:Thriller rdf:type owl:Class ;
+          rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Writer
+:Writer rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "52.58741868796063"^^xsd:double ;
+                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "109.44275350160838"^^xsd:double ;
+                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                   ] ;
+        rdfs:label "Writer"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Action
+:Action rdf:type owl:NamedIndividual ,
+                 :Action .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AlPacino
+:AlPacino rdf:type owl:NamedIndividual ,
+                   :Actor ;
+          :Actorof :Movie6 ;
+          :age 82 ;
+          :gender "Male" ;
+          :name "Al Pacino" ;
+          :nationality "American" ;
+          <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+          <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:04:27Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/AnthonyHopkins
+:AnthonyHopkins rdf:type owl:NamedIndividual ,
+                         :Actor ;
+                :Actorof :Movie5 ;
+                :age 84 ;
+                :gender "Male" ;
+                :name "Anthony Hopkins" ;
+                :nationality "British" ;
+                <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+                <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:11:20Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BongJoonHo
+:BongJoonHo rdf:type owl:NamedIndividual ,
+                     :Actor ,
+                     :Director ,
+                     :Writer ;
+            :Actorof :Movie9 ;
+            :Directorof :Movie9 ;
+            :Writerof :Movie9 ;
+            :age 52 ;
+            :gender "Male" ;
+            :name "Bong Joon-ho" ;
+            :nationality "South Korean" ;
+            <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+            <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:32:44Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/BradPitt
+:BradPitt rdf:type owl:NamedIndividual ,
+                   :Actor ;
+          :Actorof :Movie7 ;
+          :age 58 ;
+          :gender "Male" ;
+          :name "Brad Pitt" ;
+          :nationality "American" ;
+          <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+          <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:00:18Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristianBale
+:ChristianBale rdf:type owl:NamedIndividual ,
+                        :Actor ;
+               :Actorof :Movie3 ;
+               :age 48 ;
+               :gender "Male" ;
+               :name "Christian Bale" ;
+               :nationality "British" ;
+               <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+               <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:38:33Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChristopherNolan
+:ChristopherNolan rdf:type owl:NamedIndividual ,
+                           :Director ,
+                           :Writer ;
+                  :Directorof :Movie3 ;
+                  :Writerof :Movie3 ;
+                  :age 51 ;
+                  :gender "Male" ;
+                  :name "Christopher Nolan" ;
+                  :nationality "British" ;
+                  <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+                  <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:35:48Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/ChuckPalahniuk
+:ChuckPalahniuk rdf:type owl:NamedIndividual ,
+                         :Writer ;
+                :Writerof :Movie4 ;
+                :age 59 ;
+                :gender "Male" ;
+                :name "Chuck Palahniuk" ;
+                :nationality "American" ;
+                <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+                <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:34:07Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Comedy
+:Comedy rdf:type owl:NamedIndividual ,
+                 :Comedy .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Crime
+:Crime rdf:type owl:NamedIndividual ,
+                :Crime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/DavidFincher
+:DavidFincher rdf:type owl:NamedIndividual ,
+                       :Actor ,
+                       :Director ;
+              :Actorof :Movie4 ;
+              :Directorof :Movie4 ;
+              :age 59 ;
+              :gender "Male" ;
+              :name "David Fincher" ;
+              :nationality "American" ;
+              <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+              <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:31:44Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Drama
+:Drama rdf:type owl:NamedIndividual ,
+                :Drama .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/GuyRitchie
+:GuyRitchie rdf:type owl:NamedIndividual ,
+                     :Director ,
+                     :Writer ;
+            :Directorof :Movie7 ;
+            :Writerof :Movie7 ;
+            :gender "Male" ;
+            :name "Guy Ritchie" ;
+            :nationality "British" ;
+            :year 53 ;
+            <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+            <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:48:56Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/HarveyKeitel
+:HarveyKeitel rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :Actorof :Movie8 ;
+              :age 82 ;
+              :gender "Male" ;
+              :name "Harvey Keitel" ;
+              :nationality "American" ;
+              <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+              <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:45:23Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JohnTravolta
+:JohnTravolta rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :Actorof :Movie1 ;
+              :age 67 ;
+              :gender "Male" ;
+              :name "John Travolta" ;
+              :nationality "American" ;
+              <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+              <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:25:53Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/JonathanDemme
+:JonathanDemme rdf:type owl:NamedIndividual ,
+                        :Director ,
+                        :Writer ;
+               :Directorof :Movie5 ;
+               :Writerof :Movie5 ;
+               :age 73 ;
+               :gender "Male" ;
+               :name "Jonathan Demme" ;
+               :nationality "American" ;
+               <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+               <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:08:56Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/MichaelMann
+:MichaelMann rdf:type owl:NamedIndividual ,
+                      :Director ,
+                      :Writer ;
+             :Directorof :Movie6 ;
+             :Writerof :Movie6 ;
+             :age 79 ;
+             :gender "Male" ;
+             :name "Michael Mann" ;
+             :nationality "American" ;
+             <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+             <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:02:24Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie1
+:Movie1 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :QuentinTarantino ,
+                  :UmaThurman ;
+        :hasDirector :QuentinTarantino ;
+        :hasGenre :Crime ,
+                  :Thriller ;
+        :hasWriter :QuentinTarantino ;
+        :country "USA" ;
+        :language "English" ;
+        :title "Pulp Fiction" ;
+        :year 1994 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:40:43Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie10
+:Movie10 rdf:type owl:NamedIndividual ,
+                  :Movie ;
+         :hasActor :RobertoBenigni ;
+         :hasDirector :RobertoBenigni ;
+         :hasGenre :Comedy ,
+                   :Drama ;
+         :hasWriter :NicolaPiovani ;
+         :country "Italy" ;
+         :language "Italian" ;
+         :title "Life Is Beautiful" ;
+         :year 1997 ;
+         <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+         <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:08:06Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie2
+:Movie2 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :QuentinTarantino ;
+        :hasDirector :QuentinTarantino ;
+        :hasGenre :Action ,
+                  :Crime ,
+                  :Thriller ;
+        :hasWriter :QuentinTarantino ;
+        :country "USA" ;
+        :language "English" ;
+        :title "Kill Bill (volume 1)" ;
+        :year 2003 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:52:00Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie3
+:Movie3 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :ChristianBale ;
+        :hasDirector :ChristopherNolan ;
+        :hasGenre :Action ,
+                  :Crime ,
+                  :Drama ;
+        :hasWriter :ChristopherNolan ;
+        :country "USA" ;
+        :language "English" ;
+        :title "The Dark Knight" ;
+        :year 2008 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:52:10Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie4
+:Movie4 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :DavidFincher ;
+        :hasDirector :DavidFincher ;
+        :hasGenre :Drama ;
+        :hasWriter :ChuckPalahniuk ;
+        :country "USA" ;
+        :language "English" ;
+        :title "FightClub" ;
+        :year 1994 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T11:52:16Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie5
+:Movie5 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :AnthonyHopkins ;
+        :hasDirector :JonathanDemme ;
+        :hasGenre :Crime ,
+                  :Drama ,
+                  :Thriller ;
+        :hasWriter :JonathanDemme ;
+        :country "USA" ;
+        :language "English" ;
+        :title "The Silence Of The Lambs" ;
+        :year 1991 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:43:57Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie6
+:Movie6 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :AlPacino ;
+        :hasDirector :MichaelMann ;
+        :hasGenre :Action ,
+                  :Crime ,
+                  :Drama ;
+        :hasWriter :MichaelMann ;
+        :country "USA" ;
+        :language "English" ;
+        :title "Heat" ;
+        :year 1995 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:44:04Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie7
+:Movie7 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :BradPitt ;
+        :hasDirector :GuyRitchie ;
+        :hasGenre :Comedy ,
+                  :Crime ;
+        :hasWriter :GuyRitchie ;
+        :country "UK" ;
+        :language "English" ;
+        :title "Snatch" ;
+        :year 2000 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:45:25Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie8
+:Movie8 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :HarveyKeitel ,
+                  :QuentinTarantino ;
+        :hasDirector :QuentinTarantino ;
+        :hasGenre :Crime ,
+                  :Drama ;
+        :hasWriter :QuentinTarantino ;
+        :country "USA" ;
+        :language "English" ;
+        :title "Reservoir Dogs" ;
+        :year 1992 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:45:33Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Movie9
+:Movie9 rdf:type owl:NamedIndividual ,
+                 :Movie ;
+        :hasActor :BongJoonHo ;
+        :hasDirector :BongJoonHo ;
+        :hasGenre :Comedy ,
+                  :Drama ,
+                  :Thriller ;
+        :hasWriter :BongJoonHo ;
+        :language "Korean" ;
+        :nationality "South Korea" ;
+        :title "Parasite" ;
+        :year 2019 ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:07:45Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/NicolaPiovani
+:NicolaPiovani rdf:type owl:NamedIndividual ,
+                        :Writer ;
+               :Writerof :Movie10 ;
+               :age 75 ;
+               :gender "Male" ;
+               :name "Nicola Piovani" ;
+               :nationality "Italian" ;
+               <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+               <http://purl.org/dc/elements/1.1/date> "2024-05-03T14:16:10Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/QuentinTarantino
+:QuentinTarantino rdf:type owl:NamedIndividual ,
+                           :Actor ,
+                           :Director ,
+                           :Writer ;
+                  :Actorof :Movie1 ,
+                           :Movie2 ,
+                           :Movie8 ;
+                  :Directorof :Movie1 ,
+                              :Movie2 ,
+                              :Movie8 ;
+                  :Writerof :Movie1 ,
+                            :Movie2 ,
+                            :Movie8 ;
+                  :age 59 ;
+                  :gender "Male" ;
+                  :name "Quentin Tarantino" ;
+                  :nationality "American" ;
+                  <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+                  <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:18:54Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/RobertoBenigni
+:RobertoBenigni rdf:type owl:NamedIndividual ,
+                         :Actor ,
+                         :Director ;
+                :Actorof :Movie10 ;
+                :Directorof :Movie10 ;
+                :age 69 ;
+                :gender "Male" ;
+                :nationality "Italian" ;
+                :title "Roberto Benigni" ;
+                <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+                <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:29:11Z"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/Thriller
+:Thriller rdf:type owl:NamedIndividual ,
+                   :Thriller .
+
+
+###  http://www.semanticweb.org/ranaahmed/ontologies/2024/4/Movei-Project/UmaThurman
+:UmaThurman rdf:type owl:NamedIndividual ,
+                     :Actor ,
+                     :Writer ;
+            :Actorof :Movie1 ;
+            :Writerof :Movie2 ;
+            :age 51 ;
+            :gender "Female" ;
+            :name "Uma Thurman" ;
+            :nationality "American" ;
+            <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+            <http://purl.org/dc/elements/1.1/date> "2024-05-03T13:23:23Z"^^xsd:dateTime .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Action <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "77.98632681730729"^^xsd:double ;
+                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "141.9558673873461"^^xsd:double ;
+                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                   ] ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:38:01Z"^^xsd:dateTime .
+
+
+:Comedy <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "111.93120624160925"^^xsd:double ;
+                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "104.43991400016249"^^xsd:double ;
+                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                   ] ;
+        <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+        <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:37:47Z"^^xsd:dateTime .
+
+
+:Crime <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "73.15048190362742"^^xsd:double ;
+                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "203.76225811001524"^^xsd:double ;
+                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                  ] ;
+       <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+       <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:37:51Z"^^xsd:dateTime .
+
+
+:Drama <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "226.47070054709525"^^xsd:double ;
+                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "122.354733591743"^^xsd:double ;
+                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                  ] ;
+       <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+       <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:38:05Z"^^xsd:dateTime .
+
+
+:Thriller <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "142.1014707378477"^^xsd:double ;
+                                                                       <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "296.8019640671547"^^xsd:double ;
+                                                                       rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                     ] ;
+          <http://purl.org/dc/elements/1.1/creator> "rana ahmed" ;
+          <http://purl.org/dc/elements/1.1/date> "2024-05-03T12:34:18Z"^^xsd:dateTime .
+
+
+owl:Thing rdfs:comment "Movie project" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
